@@ -24,11 +24,11 @@ jobs:
         with:
           node-version: 12.x
       - name: npm install
-        if: env.YOUTH_HEADER
+        if: env.youth_banner
         run: |
           npm install
       - name: '运行 【中青看点】'
-        if: env.YOUTH_HEADER
+        if: env.youth_banner
         run: |
           node Task/youth_banner.js
         env:
